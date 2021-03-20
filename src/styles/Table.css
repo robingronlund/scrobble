@@ -1,0 +1,38 @@
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-indent: initial;
+}
+
+.table-row {
+  cursor: pointer;
+  text-align: center;
+}
+
+.table-row:hover {
+  background-color: #f5545c61;
+  color: white;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #f1f1f1;
+  color: #161616;
+}
+
+.table-row__th {
+ padding: 30px;
+}
+
+.table-row__td {
+  padding: 30px;
+}
+
+.table-row__td--album__cover {
+  max-width: 6em;
+  max-height: 6em;
+}
