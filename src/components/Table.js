@@ -3,8 +3,8 @@ import React from 'react'
 import '../styles/Table.css'
 import TableRow from './TableRow'
 
-const Table = ({...props}) => {
-  const { scrobbles} = props
+const Table = (props) => {
+  const { scrobbles } = props
 
   return (
     <main className="main-wrapper">
