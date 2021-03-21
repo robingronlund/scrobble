@@ -5,7 +5,7 @@ import { Router } from '@reach/router';
 
 // Styles
 import '../styles/App.css';
-import ScrobbleApi from '../api/scrobble-api'
+import '../styles/Loader.css'
 
 // Components
 import Header from './Header'
@@ -27,7 +27,7 @@ const App = () => {
     apiInstance.fetchHistory()
       .then((scrobbles) => {
         setTimeout(() => {
-          setState({ loading: false, scrobbles: scrobbles})
+          setState({ loading: false, scrobbles: scrobbles.reverse()})
         }, 3000);
       })
   }, [setState])

@@ -5,9 +5,9 @@ function WithTableLoading(Component) {
     if (!isLoading) return <Component {...props} />;
     return (
       <main className="main-wrapper">
-        <p style={{ textAlign: 'center', fontSize: '30px' }}>
-          Hold on, fetching data may take some time :)
-        </p>
+        <div className="loader-container">
+          <div className="loader"></div>
+        </div>
       </main>
     );
   };

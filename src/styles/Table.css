@@ -1,3 +1,5 @@
+@import './Animations.css';
+
 .table-wrapper {
   display: flex;
   justify-content: center;
@@ -12,6 +14,7 @@
 .table-row {
   cursor: pointer;
   text-align: center;
+  animation: fade-in 1s ease-out
 }
 
 .table-row:hover {
