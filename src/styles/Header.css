@@ -31,14 +31,3 @@
 .header-main__logo--text__lighten {
   color: #f23441b7;
 }
-
-.header-nav {
-  display: flex;
-  margin: 0;
-  align-items: center;
-}
-
-.header-nav__item {
-  height: 100%;
-  margin: 0 16px;
-}

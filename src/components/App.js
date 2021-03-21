@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { useEffect, useState } from 'react';
-import { Router } from '@reach/router';
+import ScrobbleApi from '../api/scrobble-api'
 
 // Styles
 import '../styles/App.css';
@@ -32,13 +32,10 @@ const App = () => {
       })
   }, [setState])
 
-
   return (
     <div className="page-container">
       <Header></Header>
-      <Router>
-        <TableLoading path="/historical" isLoading={state.loading} scrobbles={state.scrobbles}></TableLoading>
-      </Router>
+      <TableLoading path="/recently-played" isLoading={state.loading} scrobbles={state.scrobbles}></TableLoading>
     </div>
   );
 }
